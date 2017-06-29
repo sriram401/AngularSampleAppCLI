@@ -3,9 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from "@angular/http";
 import { RouterModule } from "@angular/router";
 
+import { DevExtremeModule } from "devextreme-angular";
+
+
 import { AppComponent }  from './app.component';
 import { WelcomeComponent } from "./home/welcome.component";
 import { ProductModule } from "./products/product.module";
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
   imports: [ 
@@ -16,7 +20,9 @@ import { ProductModule } from "./products/product.module";
       { path : '', redirectTo : 'welcome', pathMatch : 'full'},
       { path : '**', component : WelcomeComponent}
     ]),
-    ProductModule
+    ProductModule,
+    DevExtremeModule,
+    SharedModule
     ],
   declarations: [ 
     AppComponent, 
