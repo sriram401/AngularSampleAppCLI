@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule,ReactiveFormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { StarComponent } from "./star.component";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule(
     {
@@ -12,7 +13,8 @@ import { StarComponent } from "./star.component";
             FormsModule,
             ReactiveFormsModule,
             CommonModule,
-            StarComponent
+            StarComponent,
+            BrowserAnimationsModule
         ],
         declarations : [
             StarComponent

@@ -5,6 +5,7 @@ import { RouterModule } from "@angular/router";
 
 import { DevExtremeModule } from "devextreme-angular";
 
+import {MaterialModule} from '@angular/material';
 
 import { AppComponent }  from './app.component';
 import { WelcomeComponent } from "./home/welcome.component";
@@ -12,6 +13,8 @@ import { DevExtremeSamplesComponent } from './devextremesamples/devextremesample
 import { MaterialSampleComponent } from './material/materialsample.component'
 import { ProductModule } from "./products/product.module";
 import { SharedModule } from "./shared/shared.module";
+
+
 
 @NgModule({
   imports: [ 
@@ -26,6 +29,7 @@ import { SharedModule } from "./shared/shared.module";
     ]),
     ProductModule,
     DevExtremeModule,
+    MaterialModule,
     SharedModule
     ],
   declarations: [ 

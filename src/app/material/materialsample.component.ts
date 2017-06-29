@@ -1,13 +1,10 @@
-import { Component } from "@angular/core";
+import {Component} from '@angular/core';
+import {MdButton} from '@angular/material';
 
 
-@Component(
-    {
-        moduleId :module.id,
-        templateUrl : 'materialsample.component.html'
-    }
-)
-export class MaterialSampleComponent
-{
-
+@Component({
+  templateUrl: 'materialsample.component.html',
+  styleUrls: ['materialsample.component.css'],
+})
+export class MaterialSampleComponent {
 }
