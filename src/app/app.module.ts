@@ -9,6 +9,7 @@ import { DevExtremeModule } from "devextreme-angular";
 import { AppComponent }  from './app.component';
 import { WelcomeComponent } from "./home/welcome.component";
 import { DevExtremeSamplesComponent } from './devextremesamples/devextremesamples.component'
+import { MaterialSampleComponent } from './material/materialsample.component'
 import { ProductModule } from "./products/product.module";
 import { SharedModule } from "./shared/shared.module";
 
@@ -19,6 +20,7 @@ import { SharedModule } from "./shared/shared.module";
     RouterModule.forRoot([
       { path: 'welcome', component :  WelcomeComponent},
       { path: 'devextreme', component :  DevExtremeSamplesComponent},
+      { path: 'material', component :  MaterialSampleComponent},
       { path : '', redirectTo : 'welcome', pathMatch : 'full'},
       { path : '**', component : WelcomeComponent}
     ]),
@@ -29,7 +31,8 @@ import { SharedModule } from "./shared/shared.module";
   declarations: [ 
     AppComponent, 
     WelcomeComponent,
-    DevExtremeSamplesComponent
+    DevExtremeSamplesComponent,
+    MaterialSampleComponent
     ],
   bootstrap: [ AppComponent ]
 })
